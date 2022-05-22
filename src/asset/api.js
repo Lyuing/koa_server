@@ -3,7 +3,7 @@ import axios from 'axios';
 class Api {
 
   constructor(){
-    this.prePath = process.env.NODE_ENV === 'production' ?　'' : '/api'
+    this.prePath = process.env.NODE_ENV === 'production' ? '' : '/api'
   }
   getHome(){
     let path = this.prePath + '/home'
